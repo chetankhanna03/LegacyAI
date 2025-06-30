@@ -6,8 +6,8 @@
   "homepage": "https://chetankhanna03.github.io/LegacyAI",
   "scripts": {
     "dev": "vite",
-    "build": "tsc",
-    "start": "node dist/index.js",
+    "build": "vite-build",
+    "start": "node dist/index-JB3kX5xY.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "node server/index.js",
