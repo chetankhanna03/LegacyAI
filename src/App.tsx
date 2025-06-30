@@ -291,6 +291,16 @@ function App() {
           onUpdate={handleUpdateProfile}
         />
       )}
+      <footer style={{
+  textAlign: 'center',
+  padding: '1rem',
+  fontSize: '0.9rem',
+  color: '#888',
+  borderTop: '1px solid #eee',
+  marginTop: '2rem'
+}}>
+  Built with ❤️ by <strong>Bolt.new</strong>
+</footer>
     </div>
   );
 }
