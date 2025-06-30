@@ -5,12 +5,13 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import profileRoutes from './routes/profiles.js';
 import { initializeDatabase, database } from './database/init.js'; // Added database import
+import { fileURLToPath } from 'url';
 import { dirname, join, resolve } from 'path';
-
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+const root = resolve(__dirname, '..'); // Go up one level from /server
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -24,7 +25,6 @@ app.use(cors({
   origin: ['http://localhost:5173', 'http://localhost:3000'],
   credentials: true
 }));
-const root = resolve(__dirname, '..'); // Go up one level from /server
 
 app.use(express.static(join(root, 'dist')));
 app.get('*', (req, res) => {
