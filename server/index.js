@@ -49,10 +49,19 @@ app.get('/api/health', (req, res) => {
 });
 
 // ✅ Serve frontend from dist
+// Serve static files first
 app.use(express.static(join(root, 'dist')));
-app.get('*', (req, res) => {
+
+// Only fallback to index.html for non-static routes
+app.get('*', (req, res, next) => {
+  const url = req.originalUrl;
+  if (url.startsWith('/api/') || url.includes('.')) {
+    return next(); // Let API routes or static files pass through
+  }
+
   res.sendFile(join(root, 'dist', 'index.html'));
 });
+
 
 // Error handler
 app.use((err, req, res, next) => {
