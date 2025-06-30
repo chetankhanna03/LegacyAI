@@ -1,8 +1,8 @@
-# Legacy.AI 🚀
+# Legacy.AI 
 
 A memory-based conversational AI that allows users to create digital profiles of loved ones, upload memories, and chat with these profiles as if talking to that person.
 
-## ✨ Features
+##  Features
 
 - **Profile Creation**: Create detailed profiles for loved ones with personality traits and relationship context
 - **Memory Management**: Add text memories and audio transcriptions to build rich memory vaults
@@ -11,7 +11,7 @@ A memory-based conversational AI that allows users to create digital profiles of
 - **Beautiful UI**: Modern, gradient-based interface with smooth animations and intuitive design
 - **Responsive Design**: Works seamlessly across desktop, tablet, and mobile devices
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Frontend
 - **React 18** with TypeScript
@@ -25,7 +25,7 @@ A memory-based conversational AI that allows users to create digital profiles of
 - **Vector similarity search** with cosine similarity
 - **In-memory database** (easily replaceable with PostgreSQL/MongoDB)
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js 18+ 
@@ -62,7 +62,7 @@ npm run server
 
 5. **Open your browser** to `http://localhost:5173`
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Vector Embedding Flow
 1. **Memory Input**: Users add text or audio transcription memories
@@ -94,7 +94,7 @@ Memory {
 }
 ```
 
-## 🎨 UI/UX Features
+##  UI/UX Features
 
 - **Modern Gradients**: Beautiful gradient backgrounds and buttons
 - **Smooth Animations**: Hover effects and micro-interactions
@@ -103,7 +103,7 @@ Memory {
 - **Responsive Design**: Optimized for all screen sizes
 - **Accessibility**: Keyboard navigation and screen reader support
 
-## 🔧 Customization
+##  Customization
 
 ### Adding Vector Databases
 Replace the in-memory storage with proper vector databases:
@@ -121,7 +121,7 @@ For better personalization:
 2. Fine-tune GPT models on specific personality patterns
 3. Implement retrieval-augmented generation (RAG) improvements
 
-## 📦 Production Deployment
+##  Production Deployment
 
 ### Backend Deployment
 - Deploy to Vercel, Railway, or AWS
@@ -140,7 +140,7 @@ For better personalization:
 - Rate limiting for API endpoints
 - CORS configuration for production domains
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -148,11 +148,11 @@ For better personalization:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
-## 🌟 Roadmap
+##  Roadmap
 
 - [ ] Audio file upload and transcription
 - [ ] Multi-language support
